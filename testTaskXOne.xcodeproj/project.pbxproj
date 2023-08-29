@@ -38,6 +38,16 @@
 		97BB1EE52A9E67AD005BE5C2 /* CatsListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1EE42A9E67AD005BE5C2 /* CatsListRepository.swift */; };
 		97BB1EE72A9E6C1C005BE5C2 /* CatsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1EE62A9E6C1C005BE5C2 /* CatsListViewModel.swift */; };
 		97BB1EE92A9E6F69005BE5C2 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1EE82A9E6F69005BE5C2 /* UIViewController+Extension.swift */; };
+		97BB1EEB2A9E9EA0005BE5C2 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1EEA2A9E9EA0005BE5C2 /* MainViewModel.swift */; };
+		97BB1EEE2A9E9FDF005BE5C2 /* CatsListNavigationResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1EED2A9E9FDF005BE5C2 /* CatsListNavigationResponder.swift */; };
+		97BB1EF32A9EA040005BE5C2 /* DescriptionNavigationResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1EF22A9EA040005BE5C2 /* DescriptionNavigationResponder.swift */; };
+		97BB1EF52A9EA078005BE5C2 /* DescriptionNavigationStepBackResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1EF42A9EA078005BE5C2 /* DescriptionNavigationStepBackResponder.swift */; };
+		97BB1EFA2A9EA0D0005BE5C2 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1EF92A9EA0D0005BE5C2 /* DescriptionViewController.swift */; };
+		97BB1EFC2A9EA10B005BE5C2 /* DescriptionViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1EFB2A9EA10B005BE5C2 /* DescriptionViewControllerView.swift */; };
+		97BB1F022A9EA777005BE5C2 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1F012A9EA777005BE5C2 /* SpinnerViewController.swift */; };
+		97BB1F042A9EA7A4005BE5C2 /* SpinnerViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1F032A9EA7A4005BE5C2 /* SpinnerViewControllerView.swift */; };
+		97BB1F072A9EA99B005BE5C2 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1F062A9EA99B005BE5C2 /* AppColors.swift */; };
+		97BB1F0C2A9EAF86005BE5C2 /* SpinnerNavigationResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1F0B2A9EAF86005BE5C2 /* SpinnerNavigationResponder.swift */; };
 		A375662555CF2D669C52F07D /* Pods_testTaskXOne_testTaskXOneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59505B45FC0741CD25DA7E1F /* Pods_testTaskXOne_testTaskXOneUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +109,16 @@
 		97BB1EE42A9E67AD005BE5C2 /* CatsListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsListRepository.swift; sourceTree = "<group>"; };
 		97BB1EE62A9E6C1C005BE5C2 /* CatsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsListViewModel.swift; sourceTree = "<group>"; };
 		97BB1EE82A9E6F69005BE5C2 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		97BB1EEA2A9E9EA0005BE5C2 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		97BB1EED2A9E9FDF005BE5C2 /* CatsListNavigationResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsListNavigationResponder.swift; sourceTree = "<group>"; };
+		97BB1EF22A9EA040005BE5C2 /* DescriptionNavigationResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionNavigationResponder.swift; sourceTree = "<group>"; };
+		97BB1EF42A9EA078005BE5C2 /* DescriptionNavigationStepBackResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionNavigationStepBackResponder.swift; sourceTree = "<group>"; };
+		97BB1EF92A9EA0D0005BE5C2 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		97BB1EFB2A9EA10B005BE5C2 /* DescriptionViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewControllerView.swift; sourceTree = "<group>"; };
+		97BB1F012A9EA777005BE5C2 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		97BB1F032A9EA7A4005BE5C2 /* SpinnerViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewControllerView.swift; sourceTree = "<group>"; };
+		97BB1F062A9EA99B005BE5C2 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		97BB1F0B2A9EAF86005BE5C2 /* SpinnerNavigationResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerNavigationResponder.swift; sourceTree = "<group>"; };
 		A644E469A4B344027568E0C8 /* Pods-testTaskXOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTaskXOne.debug.xcconfig"; path = "Target Support Files/Pods-testTaskXOne/Pods-testTaskXOne.debug.xcconfig"; sourceTree = "<group>"; };
 		BDBD8E14A33198635650C87F /* Pods_testTaskXOneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testTaskXOneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -156,12 +176,15 @@
 		97BB1E792A9E1A3B005BE5C2 /* testTaskXOne */ = {
 			isa = PBXGroup;
 			children = (
+				97BB1F052A9EA843005BE5C2 /* Enums */,
 				97BB1ED02A9E4B83005BE5C2 /* Models */,
 				97BB1EC72A9E26DB005BE5C2 /* Helpers */,
 				97BB1EC12A9E2260005BE5C2 /* Networking */,
 				97BB1EB32A9E1BAB005BE5C2 /* General */,
+				97BB1EFD2A9EA72B005BE5C2 /* Spinner */,
 				97BB1EAD2A9E1B3E005BE5C2 /* Main */,
 				97BB1EB62A9E1C6C005BE5C2 /* CatsList */,
+				97BB1EEF2A9EA017005BE5C2 /* Description */,
 				97BB1EAA2A9E1AAC005BE5C2 /* Containers */,
 				97BB1E7A2A9E1A3B005BE5C2 /* AppDelegate.swift */,
 				97BB1E7C2A9E1A3B005BE5C2 /* SceneDelegate.swift */,
@@ -226,6 +249,7 @@
 		97BB1EB02A9E1B67005BE5C2 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				97BB1EEA2A9E9EA0005BE5C2 /* MainViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -242,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				97BB1EB72A9E1C75005BE5C2 /* UI */,
+				97BB1EEC2A9E9FAE005BE5C2 /* Responders */,
 			);
 			path = CatsList;
 			sourceTree = "<group>";
@@ -340,8 +365,8 @@
 		97BB1ED52A9E5D3C005BE5C2 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				97BB1ED62A9E5D55005BE5C2 /* CatsListRemoteAPI.swift */,
 				97BB1ED82A9E5DAD005BE5C2 /* CatsGetter.swift */,
+				97BB1ED62A9E5D55005BE5C2 /* CatsListRemoteAPI.swift */,
 				97BB1EE42A9E67AD005BE5C2 /* CatsListRepository.swift */,
 			);
 			path = Repository;
@@ -364,6 +389,115 @@
 			path = Decoders;
 			sourceTree = "<group>";
 		};
+		97BB1EEC2A9E9FAE005BE5C2 /* Responders */ = {
+			isa = PBXGroup;
+			children = (
+				97BB1EED2A9E9FDF005BE5C2 /* CatsListNavigationResponder.swift */,
+			);
+			path = Responders;
+			sourceTree = "<group>";
+		};
+		97BB1EEF2A9EA017005BE5C2 /* Description */ = {
+			isa = PBXGroup;
+			children = (
+				97BB1EF02A9EA025005BE5C2 /* UI */,
+				97BB1EF12A9EA02A005BE5C2 /* Responders */,
+			);
+			path = Description;
+			sourceTree = "<group>";
+		};
+		97BB1EF02A9EA025005BE5C2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				97BB1EF62A9EA097005BE5C2 /* Controllers */,
+				97BB1EF72A9EA0A8005BE5C2 /* Views */,
+				97BB1EF82A9EA0B2005BE5C2 /* Presentation */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		97BB1EF12A9EA02A005BE5C2 /* Responders */ = {
+			isa = PBXGroup;
+			children = (
+				97BB1EF22A9EA040005BE5C2 /* DescriptionNavigationResponder.swift */,
+				97BB1EF42A9EA078005BE5C2 /* DescriptionNavigationStepBackResponder.swift */,
+			);
+			path = Responders;
+			sourceTree = "<group>";
+		};
+		97BB1EF62A9EA097005BE5C2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				97BB1EF92A9EA0D0005BE5C2 /* DescriptionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		97BB1EF72A9EA0A8005BE5C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97BB1EFB2A9EA10B005BE5C2 /* DescriptionViewControllerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97BB1EF82A9EA0B2005BE5C2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		97BB1EFD2A9EA72B005BE5C2 /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				97BB1EFE2A9EA75C005BE5C2 /* UI */,
+				97BB1F0A2A9EAF43005BE5C2 /* Responders */,
+			);
+			path = Spinner;
+			sourceTree = "<group>";
+		};
+		97BB1EFE2A9EA75C005BE5C2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				97BB1EFF2A9EA760005BE5C2 /* Controllers */,
+				97BB1F002A9EA766005BE5C2 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		97BB1EFF2A9EA760005BE5C2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				97BB1F012A9EA777005BE5C2 /* SpinnerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		97BB1F002A9EA766005BE5C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97BB1F032A9EA7A4005BE5C2 /* SpinnerViewControllerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97BB1F052A9EA843005BE5C2 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				97BB1F062A9EA99B005BE5C2 /* AppColors.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		97BB1F0A2A9EAF43005BE5C2 /* Responders */ = {
+			isa = PBXGroup;
+			children = (
+				97BB1F0B2A9EAF86005BE5C2 /* SpinnerNavigationResponder.swift */,
+			);
+			path = Responders;
+			sourceTree = "<group>";
+		};
 		9DB629B78354BB734F61DD16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,7 +518,6 @@
 				22BDED1363C6465770FCF574 /* Pods-testTaskXOneTests.debug.xcconfig */,
 				43D963ACA16004B7EBDC1F71 /* Pods-testTaskXOneTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -628,15 +761,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				97BB1EE52A9E67AD005BE5C2 /* CatsListRepository.swift in Sources */,
+				97BB1EFA2A9EA0D0005BE5C2 /* DescriptionViewController.swift in Sources */,
 				97BB1E7B2A9E1A3B005BE5C2 /* AppDelegate.swift in Sources */,
 				97BB1ECD2A9E28FF005BE5C2 /* NetworkingHTTPClient.swift in Sources */,
+				97BB1F022A9EA777005BE5C2 /* SpinnerViewController.swift in Sources */,
 				97BB1E7D2A9E1A3B005BE5C2 /* SceneDelegate.swift in Sources */,
 				97BB1EE32A9E61F0005BE5C2 /* RemoteCatImage.swift in Sources */,
 				97BB1EB52A9E1BBA005BE5C2 /* NiblessViewController.swift in Sources */,
 				97BB1ECA2A9E273E005BE5C2 /* URL+Extension.swift in Sources */,
+				97BB1F072A9EA99B005BE5C2 /* AppColors.swift in Sources */,
+				97BB1EF52A9EA078005BE5C2 /* DescriptionNavigationStepBackResponder.swift in Sources */,
+				97BB1EEE2A9E9FDF005BE5C2 /* CatsListNavigationResponder.swift in Sources */,
 				97BB1EE72A9E6C1C005BE5C2 /* CatsListViewModel.swift in Sources */,
 				97BB1EC42A9E2287005BE5C2 /* NetworkingRequest.swift in Sources */,
 				97BB1ED22A9E4BAE005BE5C2 /* Cat.swift in Sources */,
+				97BB1F0C2A9EAF86005BE5C2 /* SpinnerNavigationResponder.swift in Sources */,
+				97BB1EF32A9EA040005BE5C2 /* DescriptionNavigationResponder.swift in Sources */,
 				97BB1EC02A9E1F57005BE5C2 /* CatsListViewControllerView.swift in Sources */,
 				97BB1EE92A9E6F69005BE5C2 /* UIViewController+Extension.swift in Sources */,
 				97BB1ED42A9E5C28005BE5C2 /* RemoteCat.swift in Sources */,
@@ -646,10 +786,13 @@
 				97BB1EBD2A9E1CAC005BE5C2 /* CatsListViewController.swift in Sources */,
 				97BB1ED92A9E5DAD005BE5C2 /* CatsGetter.swift in Sources */,
 				97BB1ECF2A9E4128005BE5C2 /* URLSessionNetworkingHTTPClient.swift in Sources */,
+				97BB1F042A9EA7A4005BE5C2 /* SpinnerViewControllerView.swift in Sources */,
 				97BB1EE12A9E60F9005BE5C2 /* ResponseError.swift in Sources */,
 				97BB1EDF2A9E60CB005BE5C2 /* ResponseDataDecoder.swift in Sources */,
+				97BB1EFC2A9EA10B005BE5C2 /* DescriptionViewControllerView.swift in Sources */,
 				97BB1EDC2A9E5F66005BE5C2 /* API.swift in Sources */,
 				97BB1ED72A9E5D55005BE5C2 /* CatsListRemoteAPI.swift in Sources */,
+				97BB1EEB2A9E9EA0005BE5C2 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
