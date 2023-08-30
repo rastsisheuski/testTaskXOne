@@ -78,7 +78,7 @@ final class MainViewController: NiblessViewController {
     
     private func presentCatsListViewController() {
         let catsListViewController = catsListViewControllerFactory()
-        addFullScreen(childViewController: catsListViewController)
+        addFullScreenWithSafeArea(childViewController: currentNavigationController)
         currentNavigationController.viewControllers = [catsListViewController]
     }
 

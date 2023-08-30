@@ -19,7 +19,6 @@ final class CatsListViewController: NiblessViewController {
     }
     
     private let viewModel: CatsListViewModel
-    private let errorPresenter: ErrorPresenter
     private let safariPresenter: SafariPresenter
     private let spinnerNavigationResponder: SpinnerNavigationResponder
     private let descriptionNavigationResponder: DescriptionNavigationResponder
@@ -27,12 +26,10 @@ final class CatsListViewController: NiblessViewController {
     private var currentPaginationPage: Int = 0
     
     init(viewModel: CatsListViewModel,
-         errorPresenter: ErrorPresenter,
          safariPresenter: SafariPresenter,
          spinnerNavigationResponder: SpinnerNavigationResponder,
          descriptionNavigationResponder: DescriptionNavigationResponder) {
         self.viewModel = viewModel
-        self.errorPresenter = errorPresenter
         self.safariPresenter = safariPresenter
         self.spinnerNavigationResponder = spinnerNavigationResponder
         self.descriptionNavigationResponder = descriptionNavigationResponder

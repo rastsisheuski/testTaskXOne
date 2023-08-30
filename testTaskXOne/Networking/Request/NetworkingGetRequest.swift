@@ -37,7 +37,7 @@ struct NetworkingGetRequest: NetworkingRequest {
             url = url.appending($0.key, value: $0.value)
         }
         
-        var request = URLRequest(url: url)
+        var request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad, timeoutInterval: 1.0)
         
         headers?.forEach {
             request.addValue($0.value, forHTTPHeaderField: $0.key)

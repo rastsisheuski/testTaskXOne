@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Network
 
 final class URLSessionNetworkingHTTPClient: NetworkingHTTPClient {
     
@@ -16,9 +17,11 @@ final class URLSessionNetworkingHTTPClient: NetworkingHTTPClient {
     }
     
     func makeRequest(_ request: NetworkingRequest) async throws -> NetworkingHTTPClient.Result {
-        guard let urlRequest = request.makeURLRequest() else {
+        
+        guard var urlRequest = request.makeURLRequest() else {
             throw Error.invalidURL
         }
+        
         
         do {
             let (data, urlResponse) = try await urlSession.data(for: urlRequest)
