@@ -24,7 +24,7 @@ final class CatsListRepository: CatsGetter {
     // MARK: -
     // MARK: - Public Methods
     
-    func getCats(completion: @escaping (Result<[Cat], Error>) -> Void) {
-        catsListRemoteAPI.getCats(completion: completion)
+    func getCats(page: Int, completion: @escaping (Result<[Cat], Error>) -> Void) {
+        catsListRemoteAPI.getCats(page: page, completion: completion)
     }
 }

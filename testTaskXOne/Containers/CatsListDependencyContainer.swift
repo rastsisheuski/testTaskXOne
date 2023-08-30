@@ -29,7 +29,7 @@ class CatsListDependencyContainer {
             self.createSpinnerViewController()
         }
         let catsListViewControllerFactory = {
-            self.createCatsListViewController()
+            self.createCatsListViewController(spinnerNavigationResponder: sharedViewModel, descriptionNavigationResponder: sharedViewModel)
         }
         let descriptionViewControllerFactory = {
             self.createDescriptionViewController()
@@ -49,10 +49,16 @@ class CatsListDependencyContainer {
         return SpinnerViewController()
     }
     
-    private func createCatsListViewController() -> CatsListViewController {
+    private func createCatsListViewController(spinnerNavigationResponder: SpinnerNavigationResponder, descriptionNavigationResponder: DescriptionNavigationResponder) -> CatsListViewController {
         let viewModel = createCatsListViewModel()
+        let errorPresenter = createErrorPresenter()
+        let safariPresenter = createSafariPresenter()
         
-        return CatsListViewController(viewModel: viewModel)
+        return CatsListViewController(viewModel: viewModel,
+                                      errorPresenter: errorPresenter,
+                                      safariPresenter: safariPresenter,
+                                      spinnerNavigationResponder: spinnerNavigationResponder,
+                                      descriptionNavigationResponder: descriptionNavigationResponder)
     }
     
     private func createCatsListViewModel() -> CatsListViewModel {
@@ -75,5 +81,13 @@ class CatsListDependencyContainer {
     
     private func createMainViewModel() -> MainViewModel {
         return MainViewModel()
+    }
+    
+    private func createErrorPresenter() -> ErrorPresenter {
+        return ErrorPresenter()
+    }
+    
+    private func createSafariPresenter() -> SafariPresenter {
+        return SafariPresenter()
     }
 }

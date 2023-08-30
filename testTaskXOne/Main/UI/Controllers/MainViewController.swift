@@ -47,10 +47,6 @@ final class MainViewController: NiblessViewController {
         
         presentCatsListViewController()
         bindViewModel()
-        presentSpinner()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) { [weak self] in
-            self?.hideSpinner()
-        }
     }
     
     // MARK: -

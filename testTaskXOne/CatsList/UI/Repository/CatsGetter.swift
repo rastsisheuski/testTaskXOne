@@ -8,5 +8,5 @@
 import Foundation
 
 protocol CatsGetter {
-    func getCats(completion: @escaping (Result<[Cat], Error>) -> Void)
+    func getCats(page: Int, completion: @escaping (Result<[Cat], Error>) -> Void)
 }

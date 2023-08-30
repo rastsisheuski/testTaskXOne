@@ -24,10 +24,10 @@ final class CatsListRemoteAPI:CatsGetter {
     // MARK: -
     // MARK: - Public Methods
     
-    func getCats(completion: @escaping (Result<[Cat], Error>) -> Void) {
+    func getCats(page: Int, completion: @escaping (Result<[Cat], Error>) -> Void) {
         Task {
             do {
-                let remoteCats = try await getRemoteCats()
+                let remoteCats = try await getRemoteCats(page: page)
                 var catsArray: [Cat] = []
                 for cat in remoteCats {
                     guard let imageId = cat.imageID else { continue }
@@ -49,11 +49,11 @@ final class CatsListRemoteAPI:CatsGetter {
     // MARK: -
     // MARK: - Private Methods
     
-    private func getRemoteCats() async throws -> [RemoteCat] {
+    private func getRemoteCats(page: Int) async throws -> [RemoteCat] {
         let urlString = API.baseURL + "breeds"
         var getRequest = NetworkingGetRequest(urlString: urlString)
         
-        getRequest.queryParams = ["limit": "10", "page": "1"]
+        getRequest.queryParams = ["limit": "10", "page": "\(page)"]
         
         do {
             let result = try await httpClient.makeRequest(getRequest)
@@ -88,5 +88,4 @@ final class CatsListRemoteAPI:CatsGetter {
             throw error
         }
     }
-    
 }

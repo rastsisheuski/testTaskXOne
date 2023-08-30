@@ -12,7 +12,7 @@ final class SpinnerViewControllerView: UIView {
     // MARK: -
     // MARK: - Public Properties
     
-    let activityIndicator: UIActivityIndicatorView = {
+    lazy var activityIndicator: UIActivityIndicatorView = {
         let spinnerView = UIActivityIndicatorView()
         spinnerView.translatesAutoresizingMaskIntoConstraints = false
         spinnerView.color = AppColors.spinnerColor.value

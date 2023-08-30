@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SafariServices
 
 final class DescriptionViewController: NiblessViewController {
     
@@ -24,5 +25,8 @@ final class DescriptionViewController: NiblessViewController {
         
         view = DescriptionViewControllerView()
     }
+}
+
+extension DescriptionViewController: SFSafariViewControllerDelegate {
     
 }

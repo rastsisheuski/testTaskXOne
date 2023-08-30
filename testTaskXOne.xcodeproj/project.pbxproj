@@ -48,6 +48,11 @@
 		97BB1F042A9EA7A4005BE5C2 /* SpinnerViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1F032A9EA7A4005BE5C2 /* SpinnerViewControllerView.swift */; };
 		97BB1F072A9EA99B005BE5C2 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1F062A9EA99B005BE5C2 /* AppColors.swift */; };
 		97BB1F0C2A9EAF86005BE5C2 /* SpinnerNavigationResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1F0B2A9EAF86005BE5C2 /* SpinnerNavigationResponder.swift */; };
+		97BB1F0F2A9EBFB2005BE5C2 /* CatsListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1F0E2A9EBFB2005BE5C2 /* CatsListCollectionViewCell.swift */; };
+		97BB1F112A9EC10B005BE5C2 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1F102A9EC10B005BE5C2 /* AppImages.swift */; };
+		97BB1F132A9EC340005BE5C2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1F122A9EC340005BE5C2 /* UIView+Extension.swift */; };
+		97BB1F182A9EDBAB005BE5C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1F172A9EDBAB005BE5C2 /* Constants.swift */; };
+		97BB1F1F2A9FB957005BE5C2 /* SafariPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BB1F1E2A9FB957005BE5C2 /* SafariPresenter.swift */; };
 		A375662555CF2D669C52F07D /* Pods_testTaskXOne_testTaskXOneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59505B45FC0741CD25DA7E1F /* Pods_testTaskXOne_testTaskXOneUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +124,11 @@
 		97BB1F032A9EA7A4005BE5C2 /* SpinnerViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewControllerView.swift; sourceTree = "<group>"; };
 		97BB1F062A9EA99B005BE5C2 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		97BB1F0B2A9EAF86005BE5C2 /* SpinnerNavigationResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerNavigationResponder.swift; sourceTree = "<group>"; };
+		97BB1F0E2A9EBFB2005BE5C2 /* CatsListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsListCollectionViewCell.swift; sourceTree = "<group>"; };
+		97BB1F102A9EC10B005BE5C2 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
+		97BB1F122A9EC340005BE5C2 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		97BB1F172A9EDBAB005BE5C2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		97BB1F1E2A9FB957005BE5C2 /* SafariPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariPresenter.swift; sourceTree = "<group>"; };
 		A644E469A4B344027568E0C8 /* Pods-testTaskXOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTaskXOne.debug.xcconfig"; path = "Target Support Files/Pods-testTaskXOne/Pods-testTaskXOne.debug.xcconfig"; sourceTree = "<group>"; };
 		BDBD8E14A33198635650C87F /* Pods_testTaskXOneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testTaskXOneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -258,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				97BB1EB42A9E1BBA005BE5C2 /* NiblessViewController.swift */,
+				97BB1F1E2A9FB957005BE5C2 /* SafariPresenter.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -276,6 +287,7 @@
 			children = (
 				97BB1EB82A9E1C7A005BE5C2 /* Controllers */,
 				97BB1EBA2A9E1C8C005BE5C2 /* Views */,
+				97BB1F0D2A9EBF9C005BE5C2 /* Cells */,
 				97BB1EB92A9E1C82005BE5C2 /* Presentation */,
 				97BB1ED52A9E5D3C005BE5C2 /* Repository */,
 			);
@@ -339,6 +351,7 @@
 			children = (
 				97BB1EC92A9E273D005BE5C2 /* URL+Extension.swift */,
 				97BB1EE82A9E6F69005BE5C2 /* UIViewController+Extension.swift */,
+				97BB1F122A9EC340005BE5C2 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -486,6 +499,8 @@
 			isa = PBXGroup;
 			children = (
 				97BB1F062A9EA99B005BE5C2 /* AppColors.swift */,
+				97BB1F102A9EC10B005BE5C2 /* AppImages.swift */,
+				97BB1F172A9EDBAB005BE5C2 /* Constants.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -496,6 +511,14 @@
 				97BB1F0B2A9EAF86005BE5C2 /* SpinnerNavigationResponder.swift */,
 			);
 			path = Responders;
+			sourceTree = "<group>";
+		};
+		97BB1F0D2A9EBF9C005BE5C2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				97BB1F0E2A9EBFB2005BE5C2 /* CatsListCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		9DB629B78354BB734F61DD16 /* Frameworks */ = {
@@ -761,7 +784,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				97BB1EE52A9E67AD005BE5C2 /* CatsListRepository.swift in Sources */,
+				97BB1F182A9EDBAB005BE5C2 /* Constants.swift in Sources */,
 				97BB1EFA2A9EA0D0005BE5C2 /* DescriptionViewController.swift in Sources */,
+				97BB1F0F2A9EBFB2005BE5C2 /* CatsListCollectionViewCell.swift in Sources */,
 				97BB1E7B2A9E1A3B005BE5C2 /* AppDelegate.swift in Sources */,
 				97BB1ECD2A9E28FF005BE5C2 /* NetworkingHTTPClient.swift in Sources */,
 				97BB1F022A9EA777005BE5C2 /* SpinnerViewController.swift in Sources */,
@@ -782,16 +807,19 @@
 				97BB1ED42A9E5C28005BE5C2 /* RemoteCat.swift in Sources */,
 				97BB1EAC2A9E1AEC005BE5C2 /* CatsListDependencyContainer.swift in Sources */,
 				97BB1EB22A9E1B7A005BE5C2 /* MainViewController.swift in Sources */,
+				97BB1F112A9EC10B005BE5C2 /* AppImages.swift in Sources */,
 				97BB1EC62A9E24F7005BE5C2 /* NetworkingGetRequest.swift in Sources */,
 				97BB1EBD2A9E1CAC005BE5C2 /* CatsListViewController.swift in Sources */,
 				97BB1ED92A9E5DAD005BE5C2 /* CatsGetter.swift in Sources */,
 				97BB1ECF2A9E4128005BE5C2 /* URLSessionNetworkingHTTPClient.swift in Sources */,
 				97BB1F042A9EA7A4005BE5C2 /* SpinnerViewControllerView.swift in Sources */,
 				97BB1EE12A9E60F9005BE5C2 /* ResponseError.swift in Sources */,
+				97BB1F132A9EC340005BE5C2 /* UIView+Extension.swift in Sources */,
 				97BB1EDF2A9E60CB005BE5C2 /* ResponseDataDecoder.swift in Sources */,
 				97BB1EFC2A9EA10B005BE5C2 /* DescriptionViewControllerView.swift in Sources */,
 				97BB1EDC2A9E5F66005BE5C2 /* API.swift in Sources */,
 				97BB1ED72A9E5D55005BE5C2 /* CatsListRemoteAPI.swift in Sources */,
+				97BB1F1F2A9FB957005BE5C2 /* SafariPresenter.swift in Sources */,
 				97BB1EEB2A9E9EA0005BE5C2 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
