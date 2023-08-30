@@ -19,6 +19,7 @@ final class CatsListViewController: NiblessViewController {
     }
     
     private let viewModel: CatsListViewModel
+    private let alertPresenter: AlertPresenter
     private let safariPresenter: SafariPresenter
     private let spinnerNavigationResponder: SpinnerNavigationResponder
     private let descriptionNavigationResponder: DescriptionNavigationResponder
@@ -26,10 +27,12 @@ final class CatsListViewController: NiblessViewController {
     private var currentPaginationPage: Int = 0
     
     init(viewModel: CatsListViewModel,
+         alertPresenter: AlertPresenter,
          safariPresenter: SafariPresenter,
          spinnerNavigationResponder: SpinnerNavigationResponder,
          descriptionNavigationResponder: DescriptionNavigationResponder) {
         self.viewModel = viewModel
+        self.alertPresenter = alertPresenter
         self.safariPresenter = safariPresenter
         self.spinnerNavigationResponder = spinnerNavigationResponder
         self.descriptionNavigationResponder = descriptionNavigationResponder
@@ -79,22 +82,20 @@ final class CatsListViewController: NiblessViewController {
         viewModel.currentPaginationPage.receive(on: DispatchQueue.main).sink { [weak self] paginationPage in
             self?.currentPaginationPage = paginationPage
         }.store(in: &cancellable)
+        
+        viewModel.loadCatListError.receive(on: DispatchQueue.main).sink { [weak self] error in
+            guard let self else { return }
+            self.alertPresenter.presentAlert(on: self, error: error, message: CatsListViewModel.errorTitle)
+        }.store(in: &cancellable)
     }
     
     private func calculateDishCollectionViewCellSize() -> CGSize {
-        let cellWidth = (UIScreen.main.bounds.width / 2)
+        let cellWidth = contentView.frame.width / 2
         let cellHeight = cellWidth * Constants.CatsList.collectionViewCellHeightMultiplier
         
         return CGSize(width: cellWidth, height: cellHeight)
     }
     
-    private func openSafariViewController(for urlString: String) {
-        guard let url = URL(string: urlString) else { return }
-        
-        let safariViewController = SFSafariViewController(url: url)
-        safariViewController.delegate = self
-        
-    }
 }
 // MARK: -
 // MARK: - Extension CatsListViewController + UICollectionViewDataSource

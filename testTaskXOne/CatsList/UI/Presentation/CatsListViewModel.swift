@@ -14,9 +14,13 @@ final class CatsListViewModel {
     // MARK: - Public Properties
     
     let catGetter: CatsGetter
+    public static var errorTitle: String {
+        "We can't download data. Try again."
+    }
     
     public private(set) var catsList: [Cat]?
     private(set) var pageNumber: Int = 0
+    
     
     // MARK: -
     // MARK: - Private Properties
@@ -24,6 +28,7 @@ final class CatsListViewModel {
     private(set) var isLoading = PassthroughSubject<Bool, Never>()
     private(set) var getCatsListSuccess = PassthroughSubject<Bool, Never>()
     private(set) var currentPaginationPage = PassthroughSubject<Int, Never>()
+    private(set) var loadCatListError = PassthroughSubject<Error, Never>()
     
     // MARK: -
     // MARK: - Lifecycle
@@ -51,6 +56,7 @@ final class CatsListViewModel {
                 case .failure(let error):
                     self?.getCatsListSuccess.send(false)
                     self?.isLoading.send(false)
+                    self?.loadCatListError.send(error)
             }
         }
     }

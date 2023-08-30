@@ -52,8 +52,10 @@ class CatsListDependencyContainer {
     private func createCatsListViewController(spinnerNavigationResponder: SpinnerNavigationResponder, descriptionNavigationResponder: DescriptionNavigationResponder) -> CatsListViewController {
         let viewModel = createCatsListViewModel()
         let safariPresenter = createSafariPresenter()
+        let alertPresenter = createAlertPresenter()
         
         return CatsListViewController(viewModel: viewModel,
+                                      alertPresenter: alertPresenter,
                                       safariPresenter: safariPresenter,
                                       spinnerNavigationResponder: spinnerNavigationResponder,
                                       descriptionNavigationResponder: descriptionNavigationResponder)
@@ -83,5 +85,9 @@ class CatsListDependencyContainer {
     
     private func createSafariPresenter() -> SafariPresenter {
         return SafariPresenter()
+    }
+    
+    private func createAlertPresenter() -> AlertPresenter {
+        return AlertPresenter()
     }
 }
