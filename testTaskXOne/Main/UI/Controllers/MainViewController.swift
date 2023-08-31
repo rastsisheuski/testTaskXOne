@@ -19,7 +19,6 @@ final class MainViewController: NiblessViewController {
     // MARK: - Private Methods
     
     private let catsListViewControllerFactory: () -> CatsListViewController
-    private let descriptionViewControllerFactory: () -> DescriptionViewController
     private let spinnerViewControllerFactory: () -> SpinnerViewController
     private let currentNavigationController = UINavigationController()
     
@@ -31,12 +30,10 @@ final class MainViewController: NiblessViewController {
     
     init(viewModel: MainViewModel,
          catsListViewControllerFactory: @escaping () -> CatsListViewController,
-         descriptionViewControllerFactory: @escaping () -> DescriptionViewController,
          spinnerViewControllerFactory: @escaping () -> SpinnerViewController,
          currentWindow: UIWindow) {
         self.viewModel = viewModel
         self.catsListViewControllerFactory = catsListViewControllerFactory
-        self.descriptionViewControllerFactory = descriptionViewControllerFactory
         self.spinnerViewControllerFactory = spinnerViewControllerFactory
         self.currentWindow = currentWindow
         super.init()
@@ -66,29 +63,12 @@ final class MainViewController: NiblessViewController {
                 self?.presentCatsListViewController()
             }
         }.store(in: &cancellable)
-        
-        viewModel.isDisplayingDescription.receive(on: DispatchQueue.main).sink { [weak self] needDisplayDescription in
-            if needDisplayDescription {
-                self?.presentDescriptionViewController()
-            } else {
-                self?.hideDescriptionViewController()
-            }
-        }.store(in: &cancellable)
     }
     
     private func presentCatsListViewController() {
         let catsListViewController = catsListViewControllerFactory()
         addFullScreenWithSafeArea(childViewController: currentNavigationController)
         currentNavigationController.viewControllers = [catsListViewController]
-    }
-
-    private func presentDescriptionViewController() {
-        let descriptionViewController = descriptionViewControllerFactory()
-        currentNavigationController.pushViewController(descriptionViewController, animated: true)
-    }
-    
-    private func hideDescriptionViewController() {
-        currentNavigationController.popViewController(animated: true)
     }
     
     private func presentSpinner() {

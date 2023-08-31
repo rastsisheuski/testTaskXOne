@@ -9,8 +9,6 @@ import Foundation
 import Combine
 
 final class MainViewModel: CatsListNavigationResponder,
-                           DescriptionNavigationResponder,
-                           DescriptionNavigationStepBackResponder,
                            SpinnerNavigationResponder {
     
     // MARK: -

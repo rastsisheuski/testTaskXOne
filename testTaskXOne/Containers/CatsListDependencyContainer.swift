@@ -29,15 +29,11 @@ class CatsListDependencyContainer {
             self.createSpinnerViewController()
         }
         let catsListViewControllerFactory = {
-            self.createCatsListViewController(spinnerNavigationResponder: sharedViewModel, descriptionNavigationResponder: sharedViewModel)
-        }
-        let descriptionViewControllerFactory = {
-            self.createDescriptionViewController()
+            self.createCatsListViewController(spinnerNavigationResponder: sharedViewModel)
         }
         
         return MainViewController(viewModel: sharedViewModel,
                                   catsListViewControllerFactory: catsListViewControllerFactory,
-                                  descriptionViewControllerFactory: descriptionViewControllerFactory,
                                   spinnerViewControllerFactory: spinnerViewcontrollerFactory,
                                   currentWindow: sharedWindow)
     }
@@ -49,7 +45,7 @@ class CatsListDependencyContainer {
         return SpinnerViewController()
     }
     
-    private func createCatsListViewController(spinnerNavigationResponder: SpinnerNavigationResponder, descriptionNavigationResponder: DescriptionNavigationResponder) -> CatsListViewController {
+    private func createCatsListViewController(spinnerNavigationResponder: SpinnerNavigationResponder) -> CatsListViewController {
         let viewModel = createCatsListViewModel()
         let safariPresenter = createSafariPresenter()
         let alertPresenter = createAlertPresenter()
@@ -57,18 +53,13 @@ class CatsListDependencyContainer {
         return CatsListViewController(viewModel: viewModel,
                                       alertPresenter: alertPresenter,
                                       safariPresenter: safariPresenter,
-                                      spinnerNavigationResponder: spinnerNavigationResponder,
-                                      descriptionNavigationResponder: descriptionNavigationResponder)
+                                      spinnerNavigationResponder: spinnerNavigationResponder)
     }
     
     private func createCatsListViewModel() -> CatsListViewModel {
         let catsGetter = createCatsGetter()
         
         return CatsListViewModel(catGetter: catsGetter)
-    }
-    
-    private func createDescriptionViewController() -> DescriptionViewController {
-        return DescriptionViewController()
     }
     
     private func createCatsGetter() -> CatsGetter {

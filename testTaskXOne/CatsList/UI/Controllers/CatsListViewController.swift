@@ -22,20 +22,17 @@ final class CatsListViewController: NiblessViewController {
     private let alertPresenter: AlertPresenter
     private let safariPresenter: SafariPresenter
     private let spinnerNavigationResponder: SpinnerNavigationResponder
-    private let descriptionNavigationResponder: DescriptionNavigationResponder
     private var cancellable = Set<AnyCancellable>()
     private var currentPaginationPage: Int = 0
     
     init(viewModel: CatsListViewModel,
          alertPresenter: AlertPresenter,
          safariPresenter: SafariPresenter,
-         spinnerNavigationResponder: SpinnerNavigationResponder,
-         descriptionNavigationResponder: DescriptionNavigationResponder) {
+         spinnerNavigationResponder: SpinnerNavigationResponder) {
         self.viewModel = viewModel
         self.alertPresenter = alertPresenter
         self.safariPresenter = safariPresenter
         self.spinnerNavigationResponder = spinnerNavigationResponder
-        self.descriptionNavigationResponder = descriptionNavigationResponder
         super.init()
     }
     
